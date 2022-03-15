@@ -1,0 +1,983 @@
+/******* FOOTER*******/
+.footer {
+  background-color: #a6a6a6;
+  padding: 1rem;
+}
+
+.footer__bloque {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #a6a6a6;
+}
+
+.footer__menu {
+  list-style-type: none;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.footer__menu h5 {
+  color: #000;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+}
+
+.footersocial {
+  list-style-type: none;
+  text-align: center;
+  padding: 0.5rem;
+  color: #000;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  margin-top: 1rem;
+}
+
+.footersocial a {
+  color: #000;
+  text-decoration: none;
+  font-family: "Oswald", sans-serif;
+  padding: 0.2rem;
+}
+
+.footer__logo {
+  width: 150px;
+  margin: 1rem;
+  border-radius: 0.4rem;
+  padding-top: 1.1rem;
+}
+
+.footer__credito {
+  text-align: center;
+  color: #a6a6a6;
+  padding: 1rem;
+  font-size: 0.8rem;
+  background-color: #6b3923;
+  font-family: "Oswald", sans-serif;
+}
+
+.footer__hallway {
+  text-align: center;
+  color: #a6a6a6;
+  font-size: 0.8rem;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.body {
+  font-family: "Oswald", sans-serif;
+}
+
+/******* HEADER-NAVBAR*******/
+.nav-item {
+  text-transform: uppercase;
+  padding: 0.5rem;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.1rem;
+}
+
+.nav-link {
+  color: #fff;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.nav-link:hover {
+  color: #000;
+}
+
+.navbar-brand {
+  padding-left: 1rem;
+}
+
+.navbar-toggler {
+  border-color: #fff;
+}
+
+/******* CONTENIDO INDEX*******/
+.body__index {
+  background-color: none;
+}
+
+#gridPadre {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "principal__portada taller__portada" "principal__portada ilustrativa__portada" "principal__portada tienda__portada";
+  -ms-grid-columns: 70% auto;
+      grid-template-columns: 70% auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  grid-column-gap: 0.2rem;
+  grid-row-gap: 0.1rem;
+}
+
+.principal__portada {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 1;
+  grid-area: principal__portada;
+  width: 100%;
+  grid-column-gap: 0.2rem;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  background-color: #000;
+}
+
+.principal__portada img {
+  width: 100%;
+}
+
+.taller__portada {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: taller__portada;
+  width: 100%;
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  -webkit-animation-name: taller;
+          animation-name: taller;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+.taller__portada h2 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding: 10px 10px 12px 10px;
+  margin: 50px 10px 55px 20px;
+}
+
+.taller__portada a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes taller {
+  0% {
+    background-color: #000;
+  }
+  20% {
+    background-color: #6b3923;
+  }
+  40% {
+    background-color: #aaa245;
+  }
+  60% {
+    background-color: #bc8a3c;
+  }
+  80% {
+    background-color: #6b3923;
+  }
+}
+
+@keyframes taller {
+  0% {
+    background-color: #000;
+  }
+  20% {
+    background-color: #6b3923;
+  }
+  40% {
+    background-color: #aaa245;
+  }
+  60% {
+    background-color: #bc8a3c;
+  }
+  80% {
+    background-color: #6b3923;
+  }
+}
+
+.ilustrativa__portada {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: ilustrativa__portada;
+  width: 100%;
+  background-color: #000;
+}
+
+.ilustrativa__portada .imagen2 {
+  width: 100%;
+  height: auto;
+}
+
+.tienda__portada {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: tienda__portada;
+  width: 100%;
+  background-color: #000;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  -webkit-animation-name: tienda;
+          animation-name: tienda;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+.tienda__portada h2 {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  padding: 10px 10px 12px 10px;
+  margin: 50px 10px 55px 20px;
+  text-decoration: none;
+}
+
+.tienda__portada a {
+  text-decoration: none;
+}
+
+@-webkit-keyframes tienda {
+  0% {
+    background-color: #000;
+  }
+  20% {
+    background-color: #6b3923;
+  }
+  40% {
+    background-color: #aaa245;
+  }
+  60% {
+    background-color: #bc8a3c;
+  }
+  80% {
+    background-color: #6b3923;
+  }
+}
+
+@keyframes tienda {
+  0% {
+    background-color: #000;
+  }
+  20% {
+    background-color: #6b3923;
+  }
+  40% {
+    background-color: #aaa245;
+  }
+  60% {
+    background-color: #bc8a3c;
+  }
+  80% {
+    background-color: #6b3923;
+  }
+}
+
+/******* QUIENES SOMOS*******/
+.body__somos {
+  background-color: #000;
+}
+
+.section__somos h2 {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  padding: 10px 10px 12px 25px;
+  margin: 10px 10px 12px 25px;
+}
+
+.section__somos p {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+.nosotros__img img {
+  width: 16rem;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  border-radius: 20%;
+}
+
+/******* TIENDA*******/
+.body__tienda {
+  background-color: #000;
+}
+
+.section__tienda {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+
+.section__tienda h2 {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  padding: 10px 10px 12px 25px;
+  margin: 10px 10px 12px 25px;
+}
+
+.contenedor__tienda {
+  width: 70%;
+  height: auto;
+  margin: 2rem auto;
+  border: 0.1rem solid transparent;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.tienda__venta {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0.5rem;
+  grid-row-gap: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img__venta {
+  background-color: #6b3923;
+  border-radius: 0.5rem;
+  padding: 5px 2px 2px 5px;
+  margin: 5x 2px 2px 5px;
+}
+
+.img__venta h4 {
+  font-family: "Oswald", sans-serif;
+  color: #a6a6a6;
+  padding: 5px 0px 5px 5px;
+  margin: 5px 5px 5px 5px;
+  text-transform: uppercase;
+}
+
+.img__venta img {
+  width: 97%;
+  border-radius: 0.2rem;
+  height: auto;
+  margin: 5px 5px 5px 3px;
+}
+
+.btn {
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8rem;
+  color: #fff;
+  width: 5.6rem;
+  border-radius: 0.8rem;
+  background: #000;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#020024), to(#a6a6a6));
+  background-image: linear-gradient(0deg, #020024 0%, #a6a6a6 100%);
+  margin: 2px 5px 5px 120px;
+  background-position: 0 0;
+  background-size: 100%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+/******* TALLER*******/
+.body__taller {
+  background-color: #000;
+}
+
+.section__taller h2,
+.section__taller2 h3 {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  padding: 10px 10px 12px 25px;
+  margin: 10px 10px 12px 25px;
+}
+
+.section__taller h3 {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  padding: 10px 10px 12px 25px;
+  margin: 10px 10px 12px 25px;
+}
+
+.section__taller h4 {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  margin-left: 25px;
+}
+
+.section__taller li {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 5px 5px 5px 5px;
+}
+
+.row__taller p {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: justify;
+}
+
+.section__taller2 h3 {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  padding: 5px 15px 12px 25px;
+  margin: 5px 15px 5px 25px;
+}
+
+.section__taller p,
+.section__taller2 p {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  line-height: 1.2rem;
+  text-align: justify;
+}
+
+.taller__video {
+  margin: 20px 35px 40px 55px;
+}
+
+.card {
+  margin: 40px 5px 5px 5px;
+}
+
+/******* CONTENIDO CONTACTO*******/
+.body__contact {
+  background-color: #000;
+}
+
+.contacto__1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: inline-block;
+          flex-direction: inline-block;
+}
+
+.contact__form {
+  font-family: "Oswald", sans-serif;
+  width: 80%;
+  margin-left: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 5px 15px 12px 15px;
+  background-color: #a6a6a6;
+  border: 2px;
+  border-radius: 10px;
+}
+
+#nombre,
+#apellido {
+  width: 13rem;
+  margin: 5px 10px 12px 5px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px 5px 5px;
+  text-transform: uppercase;
+}
+
+#email {
+  width: 14rem;
+  margin: 5px 10px 12px 5px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px 5px 5px;
+  text-transform: uppercase;
+}
+
+#phone {
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px 5px 5px;
+  text-transform: uppercase;
+}
+
+#consulta {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  border-radius: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 0px 5px 0px;
+  display: block;
+}
+
+#button {
+  font-family: "Oswald", sans-serif;
+  color: #a6a6a6;
+  width: 10%;
+  border-radius: 5px;
+  background-color: #6b3923;
+}
+
+.form-control {
+  background-color: #000;
+}
+
+.btn-primary {
+  font-family: "Oswald", sans-serif;
+  color: #a6a6a6;
+  background-color: #000;
+  border-color: #a6a6a6;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 2px 2px 2px 2px;
+  padding: 2px 2px 2px 2px;
+}
+
+.contacto__img img {
+  width: 300px;
+  height: 400px;
+  margin: 70px 35px 25px 20px;
+}
+
+/******* MEDIAS QUERIES*******/
+/**** TABLET*****/
+@media screen and (max-width: 768px) {
+  .footer__bloque {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #a6a6a6;
+  }
+  .footer__menu {
+    display: none;
+  }
+  .footer__logo {
+    width: 120px;
+    padding-right: 2rem;
+    border-radius: 0.2rem;
+  }
+  .footersocial a {
+    font-size: 0.8rem;
+    padding: 0rem;
+  }
+  .footer__credito {
+    text-align: center;
+    color: #a6a6a6;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    background-color: #6b3923;
+    font-family: "Oswald", sans-serif;
+  }
+  /**** INDEX TABLET*****/
+  #gridPadre {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "principal__portada principal__portada principal__portada" "taller__portada ilustrativa__portada tienda__portada";
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  .imagen2 {
+    width: 100%;
+  }
+  /**** CONTACTO TABLET*****/
+  ::-webkit-input-placeholder {
+    color: transparent;
+  }
+  .contacto__1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .contact__form {
+    width: 85%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 5px 5px 5px 5px;
+  }
+  #nombre {
+    width: 15rem;
+  }
+  #apellido {
+    width: 16rem;
+  }
+  #consulta {
+    width: 96%;
+  }
+  #email {
+    width: 16rem;
+  }
+  #phone {
+    width: 10rem;
+  }
+  ::-webkit-input-placeholder {
+    color: transparent;
+  }
+  .btn-primary {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contacto__img img {
+    display: none;
+  }
+  /**** TIENDA TABLET*****/
+  .tienda__venta {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 15rem 15rem;
+        grid-template-columns: 15rem 15rem;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .img__venta {
+    background-color: #6b3923;
+    border-radius: 0.5rem;
+    padding: 5px 2px 2px 5px;
+    margin: 5x 2px 2px 5px;
+  }
+  .img__venta h5 {
+    font-family: "Oswald", sans-serif;
+    color: #a6a6a6;
+    padding: 5px 0px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+  .img__venta img {
+    width: 97%;
+    border-radius: 0.2rem;
+    height: auto;
+    margin: 5px 5px 5px 3px;
+  }
+  .btn {
+    margin: 0px 0px 4px 145px;
+    display: block;
+    font-size: 0.7rem;
+    width: 4.7rem;
+  }
+  /**** ABOUT US TABLET*****/
+  .article__somos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article__somos p {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    text-align: justify;
+    width: 70%;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 35px 5px 35px;
+  }
+  .nosotros__img img {
+    width: 18rem;
+    padding: 5px 5px 15px 15px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 5%;
+  }
+  /**** TALLER TABLET*****/
+  .article__taller {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article__taller p {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: justify;
+    width: 80%;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 35px 25px 35px;
+  }
+  .taller__img img {
+    width: 13rem;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 45px;
+    width: 70%;
+    height: auto;
+  }
+  .taller__video {
+    position: relative;
+    overflow: hidden;
+    margin: 5px 15px 5px 15px;
+  }
+}
+
+/**** Mobile Index*****/
+@media only screen and (max-width: 500px) {
+  .footer {
+    background-color: #a6a6a6;
+    padding: 0.5rem;
+  }
+  .footer__bloque {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #a6a6a6;
+  }
+  .footer__menu {
+    display: none;
+  }
+  .footer__logo {
+    width: 90px;
+    margin: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  .footersocial {
+    list-style-type: none;
+    text-align: left;
+    color: #000;
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    margin: 0.1rem 3rem 0.1rem 0.1rem;
+    padding: 0.1rem 0.8rem 0.1rem 0.1rem;
+  }
+  .footersocial li {
+    display: block;
+    margin: 0.1rem;
+  }
+  .footersocial a {
+    font-size: 0.6rem;
+    padding: 0rem;
+  }
+  .footer__credito {
+    text-align: center;
+    color: #a6a6a6;
+    padding: 0.5rem;
+    font-size: 0.5rem;
+    background-color: #6b3923;
+    font-family: "Oswald", sans-serif;
+  }
+  /**** INDEX MOBILE*****/
+  #gridPadre {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "principal__portada" "taller__portada" "ilustrativa__portada" "tienda__portada";
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  /**** ABOUT US MOBILE*****/
+  .article__somos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article__somos p {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-align: justify;
+    width: 80%;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 35px 5px 35px;
+  }
+  .nosotros__img img {
+    width: 13rem;
+    padding: 5px 15px 12px 15px;
+    margin: 5px 5px 5px 5px;
+    border-radius: 10%;
+    margin-left: 45px;
+  }
+  /**** TALLER MOBILE*****/
+  .article__taller {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .article__taller p {
+    font-family: "Oswald", sans-serif;
+    color: #fff;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    text-align: justify;
+    width: 80%;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 35px 25px 35px;
+  }
+  .taller__img img {
+    width: 13rem;
+    padding: 5px 5px 5px 5px;
+    margin: 5px 5px 5px 45px;
+    width: 70%;
+    height: auto;
+  }
+  /**** CONTACTO MOBILE*****/
+  .contacto__1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: left;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .contact__form {
+    width: 70%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 5px 15px 12px 15px;
+  }
+  #nombre,
+  #apellido {
+    width: 7rem;
+  }
+  #consulta {
+    width: 95%;
+  }
+  #email,
+  #phone {
+    width: 7rem;
+  }
+  ::-webkit-input-placeholder {
+    color: transparent;
+  }
+  #button {
+    font-family: "Oswald", sans-serif;
+    color: #a6a6a6;
+    width: 25%;
+    border-radius: 5px;
+    background-color: #6b3923;
+    margin: 5px 0px 5px 0px;
+  }
+  .contacto__img img {
+    width: 70%;
+    height: auto;
+    margin: 25px 25px 25px 50px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  /**** TIENDA MOBILE*****/
+  .tienda__venta {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 14rem;
+        grid-template-columns: 14rem;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .img__venta h4 {
+    font-family: "Oswald", sans-serif;
+    color: #a6a6a6;
+    padding: 5px 0px 5px 5px;
+    margin: 5px 5px 5px 5px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .btn {
+    margin: 2px 0px 10px 140px;
+    display: block;
+    font-size: 0.6rem;
+    width: 4.5rem;
+  }
+}
+/*# sourceMappingURL=estilos2.css.map */
