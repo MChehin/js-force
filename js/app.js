@@ -1,5 +1,4 @@
-//Primera entrega   
-function verMarcas() {
+   function verMarcas() {
     for (let i = 0; i < marcasMotos.length; i++) { 
     console.log(marcasMotos[i])
     }

@@ -430,8 +430,24 @@ a:active {
   color: #fff;
   font-size: 0.9rem;
   margin: 5px 5px 5px 5px;
+  text-decoration: none;
 }
-
+.carrito-item li {
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 5px 5px 5px 5px;
+  list-style: none;
+}
+.carrito li {
+  font-family: "Oswald", sans-serif;
+  font-style: italic;
+  color: #fff;
+  font-size: 0.9rem;
+  margin: 5px 5px 5px 5px;
+  list-style: none;
+  background-color: #a6a6a6;
+}
 .row__taller p {
   font-family: "Oswald", sans-serif;
   color: #fff;
