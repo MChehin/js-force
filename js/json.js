@@ -13,12 +13,12 @@ btnSubmit.addEventListener("click", saveDatos)
 const obtenerDatos = ()=> {
     //debugger
     if (localStorage.getItem("datosDelForm") !=null) {
-        datosDelForm =JSON.parse(localStorage.getItem("datosDelForm"))
+        datosDelForm =JSON.parse(localStorage.getItem('datosDelForm'))
         inputNombre.value = datosDelForm.inputNombre
         inputTelefono.value = datosDelForm.inputTelefono
         inputEmail.value = datosDelForm.inputEmail
     }
-    datosDelForm = JSON.parse("datosDelForm")
+    datosDelForm = JSON.parse('datosDelForm')
 
 }
 
