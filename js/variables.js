@@ -3,9 +3,11 @@ console.table (marcasMotos)
 const articulos = ["YAMAHA 125", "SUZUKI GS 750", "HONDA CBX 1050", "DUCATI 1098", "KAWASAKI NINJA 400", "BMW GS 650"]
 
 
+
+
 // Main.js //
 const modelos = ["YAMAHA 125", "SUZUKI GS 750", "HONDA CBX 1050", "DUCATI 1098", "KAWASAKI NINJA 400", "BMW GS 650"]
-const carrito = []
+const carrito = JSON.parse(localStorage.getItem('carrito')) || []
 
 const titulo = document.getElementById("titulo")
 

@@ -430,6 +430,17 @@
 
 } 
 
+.submit {
+  font-family: "Oswald", sans-serif;
+  color: #a6a6a6;
+  background-color: #000;
+  border-color: #a6a6a6;
+  align-items: flex-end;
+  margin: 2px 2px 2px 2px;
+  padding: 2px 2px 2px 2px;
+  :active { outline:none !important; }
+} 
+
 .contacto__img img {
   width: 300px;
   height: 400px;
@@ -602,6 +613,13 @@
   }
 
   .btn {
+    margin: 0px 0px 4px 145px;
+    display: block;
+    font-size: 0.7rem;
+    width: 4.7rem;
+  }
+
+  .submit {
     margin: 0px 0px 4px 145px;
     display: block;
     font-size: 0.7rem;

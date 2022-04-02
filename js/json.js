@@ -18,9 +18,11 @@ const obtenerDatos = ()=> {
         inputTelefono.value = datosDelForm.inputTelefono
         inputEmail.value = datosDelForm.inputEmail
     }
-    datosDelForm = JSON.parse('datosDelForm')
+
+    JSON.stringify(localStorage.getItem('datosDelForm'))
 
 }
 
 obtenerDatos()
+
 

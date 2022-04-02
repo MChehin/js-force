@@ -5,7 +5,6 @@ btnSubmit.addEventListener("mousemove", ()=> {
  
 document.addEventListener("submit", (event)=> {
     event.preventDefault()
-    alert("¡Envío exitoso! Te contactaremos a la brevedad")
 })
  
 
@@ -19,4 +18,3 @@ inputNombre.addEventListener("keypress", (event)=> {
         inputTelefono.focus()
     }
 })
-
