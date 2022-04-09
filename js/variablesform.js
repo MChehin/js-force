@@ -5,6 +5,8 @@ const btnSubmit = document.querySelector("#submit")
  
 let datosDeInput = ""
 
+//-----Alertas-----//
+
 Swal.fire({title: 'Gracias por visitarnos', position: 'top-center', background: '#000', color: '#fff', confirmButtonText: 'FORCE', confirmButtonColor: '#6b3923', timer: 1300, width: '30%',})
 
 
@@ -40,3 +42,8 @@ function mostrarInfoClientes(clientes) {
   const { nombre, email, telefono } = resultado
   alert(`La información de ${nombre} es ${email} y ${telefono}`)
 }
+
+const URL = `${window.location.origin}/js/json.js`
+
+const contenidoDOM = document.querySelector("#contenido")
+const cargandoDOM = document.querySelector("#cargando")
