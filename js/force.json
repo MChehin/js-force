@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "marca": "YAMAHA",
+        "modelo": "125",
+        "anio": "1980"
+    },
+    {
+        "id": 2,
+        "marca": "SUZUKI",
+        "modelo": "GS-750",
+        "anio": "1978"
+    },
+    {
+        "id": 3,
+        "marca": "HONDA",
+        "modelo": "CBX-1050",
+        "anio": "1980"
+    },
+    {
+        "id": 4,
+        "marca": "DUCATI",
+        "modelo": "1098",
+        "anio": "2010"
+    },
+    {
+        "id": 5,
+        "marca": "KAWASAKI",
+        "modelo": "NINJA 400",
+        "anio": "1999"
+    },
+    {
+        "id": 6,
+        "marca": "BMW",
+        "modelo": "GS-650",
+        "anio": "2000"
+    }
+]
