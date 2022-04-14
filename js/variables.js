@@ -6,6 +6,7 @@ const articulos = ["YAMAHA 125", "SUZUKI GS 750", "HONDA CBX 1050", "DUCATI 1098
 
 
 
+
 // Main.js //
 const modelos = ["YAMAHA 125 - USD 5000", "SUZUKI GS 750 - USD 7000", "HONDA CBX 1050 - USD 25000", "DUCATI 1098 - USD 5000", "KAWASAKI NINJA 400 - USD 15000", "BMW GS 650 - USD 9500"]
 const carrito = JSON.parse(localStorage.getItem('carrito')) || []
@@ -19,7 +20,7 @@ const btnCarrito = document.querySelector ("#btnCarrito")
 const li = document.querySelectorAll ("li.carrito-item")
 
 
-//----------------------------------array Stock----------------------------------------------------------//
+//----------------------------------ARRAY VER MOTOS EN Stock----------------------------------------------------------//
 const inputFiltrar = document.querySelector("#filtrar")
 const tbody = document.querySelector("tbody")
 let arrayStock = ""
@@ -38,25 +39,6 @@ const inputEmail = document.querySelector("#inputEmail")
 const btnSubmit = document.querySelector("#submit")
  
 let datosDeInput = ""
-
-//-----Alertas Form -----//
-
-Swal.fire({title: 'Gracias por visitarnos', position: 'top-center', background: '#000', color: '#fff', confirmButtonText: 'FORCE', confirmButtonColor: '#6b3923', timer: 1300, width: '30%',})
-
-
-btnSubmit.addEventListener("click", ()=> {
-  const result = (inputNombre.value != "" && inputTelefono.value != "" && inputEmail.value != "")
-  if (result) { 
-    const Toast = Swal.mixin({toast: true, result: true, position: 'center', showConfirmButton: false, timer: 3000, timerProgressBar: true, iconColor: '#6b3923', background: '#000', color: '#fff',
-        didOpen: (toast) => {
-          toast.addEventListener('mouseenter', Swal.stopTimer)
-          toast.addEventListener('mouseleave', Swal.resumeTimer)
-        }
-      })
-      
-      Toast.fire({icon: 'success',title: 'Envío exitoso'})
-}
-})
 
 // Info Clientes // 
 //const clientes = [{inputNombre: "Maria", inputEmail: "maria1@gmail.com", inputTelefono:"011"}]

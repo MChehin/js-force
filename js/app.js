@@ -34,21 +34,6 @@ function agregarMarca (nuevaMarca) {
         console.table(marcasMotos)
     } 
 
-
-//----------- PERMISO EDAD---------------------------//
-
-//const usuario = {
- //   nombre: "Juan Perez",
-//    edad: 22
-//}
-//const permiso = (usuario.edad >=18) ? true : false
-
-///permiso ? console.log ("Puede continuar con la compra") : console.log ("Necesita ser mayor de 18 años para continuar")
-
-//Swal.fire({title: '¿Qué edad tenés?', icon: 'question', input: 'range', inputColor:  '#000', inputLabel: 'Deslizá la barra hasta tu edad', iconColor: '#6b3923', background: '#a6a6a6', color: '#000', confirmButtonColor: '#000', width: '300', height: '100',  
-//inputAttributes: {min: 0, max: 99, step: 1,},inputValue: 30})
-
-
 // OPERADORES // 
 carrito.length === 0 && console.log ("El carrito está vacío")
 
