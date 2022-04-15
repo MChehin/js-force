@@ -26,6 +26,7 @@ for (const articulo of articulos)
  
  
 function agregarObjetoAclase () {
+    //debugger
     let art = prompt("Ingrese el nombre del modelo: ")  
     let imp = prompt("Ingrese el importe del modelo: ")
         articulos.push(new Articulo (art, imp))

@@ -39,8 +39,8 @@ const cargarGrillaStock = () => {
   let detalleTabla = ""
   arrayStock.forEach(stock => {
     detalleTabla += `<tr>
-                      //<td>${stock.id}</td>
-                      //<td>${stock.marca}</td>
+                      <td>${stock.id}</td>
+                      <td>${stock.marca}</td>
                       <td>${stock.modelo}</td>
                       <td>${stock.anio}</td>
                     <tr>`

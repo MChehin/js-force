@@ -20,7 +20,7 @@ const btnCarrito = document.querySelector ("#btnCarrito")
 const li = document.querySelectorAll ("li.carrito-item")
 
 
-//----------------------------------ARRAY VER MOTOS EN Stock----------------------------------------------------------//
+//----------------------------------ARRAY VER MOTOS EN Stock INDEX----------------------------------------------------------//
 const inputFiltrar = document.querySelector("#filtrar")
 const tbody = document.querySelector("tbody")
 let arrayStock = ""
@@ -31,7 +31,7 @@ const URL = "js/force.json"
 
 
 
-//----------------------------------------------------VARIABLES FORM----------------------------------------------------------------//
+//---------------------------------------------------- VARIABLES FORM ----------------------------------------------------------------//
 
 const inputNombre = document.querySelector("#inputNombre")
 const inputTelefono = document.querySelector("#inputTelefono")
@@ -40,26 +40,3 @@ const btnSubmit = document.querySelector("#submit")
  
 let datosDeInput = ""
 
-// Info Clientes // 
-//const clientes = [{inputNombre: "Maria", inputEmail: "maria1@gmail.com", inputTelefono:"011"}]
-  //                [{inputNombre: "Galilea", inputEmail: "gali@gmail.com", inputTelefono:"025"}]
-                
-const clientes = {
-                    nombre: "Maria",
-                    email: "maria1@gmail.com",
-                    telefono: 123456
-                }
-
-
-function mostrarInfoClientes(clientes) {
-  debugger
-  const buscar = prompt("Cliente a buscar:")
-  const resultado = clientes.find(c => c.nombre == buscar)
-  const { nombre, email, telefono } = resultado
-  alert(`La información de ${nombre} es ${email} y ${telefono}`)
-}
-
-//const URL = `${window.location.origin}/js/objetos.js`
-
-const contenidoDOM = document.querySelector("#contenido")
-const cargandoDOM = document.querySelector("#cargando")
